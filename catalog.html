@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Album Catalog</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="../JS/validation.js"></script>
+</head>
+<body>
+    <nav>
+        <img class="Nav_logo" src="../Asset/Logo.png" alt="Logo Del Luna">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a class="active" href="catalog.html">Album</a></li>
+            <li><a href="Merch.html">Merchandise</a></li>
+            <li><a href="testimonial.html">Testimony</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div id="catalog">
+        <div id="catalog-header">
+            <h2>List of Album</h2>
+        </div>
+        <div id="catalog-album">         
+            <div id="artist-category">
+                <button type="button" id="choose" onclick="showMaleGroup()">Male Group</button>
+                <button type="button" id="choose" onclick="showFemaleGroup()">Female Group</button>
+                <button type="button" id="choose" onclick="showSoloist()">Soloist</button>
+            </div>
+
+            <div id="catalog-content">
+                <div id="male-group">
+                    <div id="male-category" style="display: none;">
+                        <div id="btn-style">
+                            <button type="button" id="malechoose" onclick="showBTS()">BTS</button>
+                            <button type="button" id="malechoose" onclick="showEXO()">EXO</button>
+                            <button type="button" id="malechoose" onclick="show17()">SEVENTEEN</button>
+                        </div>
+                    </div>
+
+                    <div id="BTS" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/01.bts_wings.jpg" alt="BTS WINGS" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>WINGS</h3>
+                                    <p>October 10, 2016</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/02.bts_loveyourselftear.jpeg" alt="BTS Love Yourself: Tear" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Love Yourself 轉 'Tear</h3>
+                                    <p>May 18, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/03.bts_mapofthesoul7.png" alt="BTS Map of The Soul: 7" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Map of The Soul: 7</h3>
+                                    <p>February 21, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <div id="EXO" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/04.exo_thewar.jpeg" alt="EXO The War" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>The War</h3>
+                                    <p>July 18, 2017</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/05.exo_dontmessupmytempo.png" alt="EXO Don't Mess Up My Tempo" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Don't Mess Up My Tempo</h3>
+                                    <p>November 2, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/06.exo_obsession.png" alt="EXO Obsession" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Obsession</h3>
+                                    <p>November 27, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="Seventeen" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/07.seventeen_al1.png" alt="Seventeen AL1" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>AL1</h3>
+                                    <p>May 22, 2017</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/08.seventeen_youmakemyday.png" alt="Seventeen You Make My Day" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>You Make My Day</h3>
+                                    <p>July 16, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/09.seventeen_henggarae.png" alt="Seventeen Henggarae" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Heng:garæ</h3>
+                                    <p>June 22, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="female-group">
+                    <div id="female-category" style="display: none;">
+                        <div id="btn-style">
+                            <button type="button" id="femalechoose" onclick="showBlackpink()">BLACKPINK</button>
+                            <button type="button" id="femalechoose" onclick="showMamamoo()">MAMAMOO</button>
+                            <button type="button" id="femalechoose" onclick="showTwice()">TWICE</button>
+                        </div>
+                    </div>
+
+                    <div id="Blackpink" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/10.blackpink_squareone.jpg" alt="Black Pink Square One" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Square One</h3>
+                                    <p>August 8, 2016</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/11.blackpink_squareup.png" alt="Black Pink Square Up" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Square Up</h3>
+                                    <p>June 15, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/12.blackpink_thealbum.png" alt="Black Pink The Album" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>The Album</h3>
+                                    <p>October 2, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="Mamamoo" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/13.mamamoo_yellow flower.jpg" alt="Mamamoo Yellow Flower" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Yellow Flower</h3>
+                                    <p>March 7, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/14.mamamoo_redmoon.jpg" alt="Mamamoo Red Moon" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Red Moon</h3>
+                                    <p>July 16, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/15.mamamoo_travel.jpg" alt="Mamamoo Travel" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Travel</h3>
+                                    <p>November 3, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="Twice" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/16.twice_whatislove.jpg" alt="Twice What Is Love" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>What is Love?</h3>
+                                    <p>April 9, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/17.twice_feelspecial.png" alt="Twice Feel Special" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Feel Special</h3>
+                                    <p>September 23, 2019</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/18.twice_eyeswideopen.jpg" alt="Twice Eyes Wide Open" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Eyes Wide Open</h3>
+                                    <p>October 26, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="soloist"> 
+                    <div id="soloist-category" style="display: none;">
+                        <div id="btn-style">
+                            <button type="button" id="solochoose" onclick="showIU()">IU</button>
+                            <button type="button" id="solochoose" onclick="showSunmi()">SUNMI</button>
+                            <button type="button" id="solochoose" onclick="showZico()">ZICO</button>
+                        </div>
+                    </div>  
+
+                    <div id="IU" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/19.iu_palette.jpg" alt="IU Palette" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Palette</h3>
+                                    <p>April 21, 2017</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/20.iu_lilac.png" alt="IU Lilac" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Lilac</h3>
+                                    <p>March 25, 2021</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div id="Sunmi" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/21.sunmi_warning.png" alt="SunMi Warning" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Warning</h3>
+                                    <p>September 4, 2018</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/22.sunmi_tail.png" alt="SunMi Tail" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Tail</h3>
+                                    <p>February 23, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="Zico" style="display: none;">
+                        <div id="album-content">
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/23.zico_thinking01.jpg" alt="Zico Thingking Pt.1" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Thinking pt.1</h3>
+                                    <p>September 30, 2019</p>
+                                </div>
+                            </div>
+        
+                            <div id="album">
+                                <div id="album-img">
+                                    <img src="../Asset/Albums/24.zico_thinking02.jpg" alt="Zico Thingking Pt.2" width="200px">
+                                </div>
+                                <div id="album-info">
+                                    <h3>Thinking pt.2</h3>
+                                    <p>November 8, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="sosmed">
+            <a class="sosmed-logo" href="https://twitter.com"><img src="../Asset/twitter.png"></a>
+            <a class="sosmed-logo" href="https://instagram.com"><img src="../Asset/instagram.png"></a>
+        </div>
+        <label class="Copyright">Copyright 2021 Del Luna</label>
+    </div>
+</body>
+</html>
